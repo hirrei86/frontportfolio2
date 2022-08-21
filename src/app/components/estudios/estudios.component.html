@@ -1,0 +1,31 @@
+<div id="clase1" class="row no-gutters ">
+    <div class="row">
+        <h1>Estudios cursados</h1>
+        <div *ngIf="userLogged |async as user">
+            <a class="button" routerLink="/newest">Agregar Estudios</a>
+        </div>
+        <div>
+            <ul>
+                <br>
+                <ng-container *ngFor="let Educacion of estudios">
+                    <li>
+                        <h2>{{Educacion.institucion}}</h2>
+                        <h5>({{Educacion.anioinicio}} - {{Educacion.aniofinal}})</h5>
+                    </li>
+                    <h4>{{Educacion.tituloobtenido}}</h4>
+                    <div *ngIf="userLogged |async as user">
+                        <a class="btn bi-pencil-square" id="btn-edit-exp"
+                            routerLink="/editar-educacion/{{Educacion.id}}">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+
+                        <button (click)="eliminar_educacion(Educacion.id)" class="btn btn-info">
+                            X
+                        </button>
+                    </div>
+                    <br>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</div>

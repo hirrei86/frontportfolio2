@@ -1,0 +1,40 @@
+<div id="clase1" class="row no-gutters ">
+        <div class="row">
+                <h1>Proyectos realizados</h1>
+                <div *ngIf="userLogged |async as user">
+                        <a class="button" routerLink="/newpro">Agregar Proyecto</a>
+                </div>
+                <div>
+                        <ul>
+                             <br>
+                                <ng-container *ngFor="let Proyecto of proyectos">
+                                        <div class="row" id="id12">
+                                                <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                                                        <h2>{{Proyecto.nombreproyecto}}</h2>
+                                                        <br>
+                                                        <h4>{{Proyecto.descripcionproyecto}}</h4>
+                                                </div>
+                                                <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                                                        <img class="image" [src]="Proyecto.imgproyecto"
+                                                                class="img-fluid img-recti" />
+                                                </div>
+                                                <div *ngIf="userLogged |async as user">
+                                                        <a class="btn bi-pencil-square" id="btn-edit-exp"
+                                                                routerLink="/editar-proyecto/{{Proyecto.id}}">
+                                                                <i class="fa fa-pencil"></i>
+                                                        </a>
+
+                                                        <button (click)="eliminar_proyecto(Proyecto.id)"
+                                                                class="btn btn-info">
+                                                                X
+                                                        </button>
+                                                </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                </ng-container>
+
+                        </ul>
+                </div>
+        </div>
+</div>

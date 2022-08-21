@@ -1,0 +1,42 @@
+<div class="container ">
+<div class="col-md-6 offset-md-3">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <h1>Editar informacion de perfil</h1>
+            <br>
+            <br>
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="editPerfil.nombre"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido"
+                            [(ngModel)]="editPerfil.apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="acercaDe">Acerca de</label>
+                        <textarea class="form-control" id="acercaDe" name="acercaDe"
+                            [(ngModel)]="editPerfil.acercaDe" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cargo">Foto de perfil (en formato URL)</label>
+                        <input type="text" class="form-control" id="imgperfil" name="imgperfil" [(ngModel)]="editPerfil.imgperfil"
+                            required>
+                        <br>
+                    </div>
+                    <button class="btn btn-primary">
+                        Guardar cambios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

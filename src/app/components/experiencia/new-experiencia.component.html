@@ -1,0 +1,42 @@
+<div class="panel-body">
+    <div class="col-md-6 offset-md-3">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <h1>Agregue su experiencia laboral</h1>
+                <br>
+                <br>
+                <div>
+                    <form (ngSubmit)="onCreate()">
+                        <div class="form-group">
+                            <label>Empresa</label>
+                            <input type="text" class="form-control" id="empleo" [(ngModel)]="experiencia.empleo"
+                                name="empleo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Año inicial</label>
+                            <input type="text" class="form-control" id="anioinicio" [(ngModel)]="experiencia.anioinicio"
+                                name="anioinicio" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Año final</label>
+                            <input type="text" class="form-control" id="aniofinal" [(ngModel)]="experiencia.aniofinal"
+                                name="aniofinal" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Cargo</label>
+                            <input type="text" class="form-control" id="cargo" [(ngModel)]="experiencia.cargo"
+                                name="cargo" required>
+                            <br>
+                        </div>
+                        <button class="btn btn-success">
+                            Guardar cambios
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

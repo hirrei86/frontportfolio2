@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <h1>Editar Porcentaje de Skill</h1>
+            <br>
+            <br>
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="Porcentaje">Porcentaje de Conocimiento</label>
+                        <br>
+                        <input type="text" class="form-control" id="porcentaje" name="porcentaje"
+                            [(ngModel)]="editPorcent.porcentaje" required>
+                        <br>
+                    </div>
+                    <button class="btn btn-primary">
+                        Guardar cambios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

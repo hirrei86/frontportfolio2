@@ -1,0 +1,31 @@
+<div id="clase1" class="row no-gutters ">
+  <div class="row">
+    <h1>Hard & Soft skills</h1>
+    <div *ngIf="userLogged |async as user">
+      <a class="button" routerLink="/newhab">Agregar Habilidades</a>
+    </div>
+    <br>
+    <br>
+    <ng-container *ngFor="let Skill of skills">
+      <div id="div1">
+        <ul>
+          <h2>
+            {{Skill.nombre}}
+          </h2>
+          <progress max="100" value={{Skill.porcentaje}} style="width: 90%; height: 40px;">
+          </progress>
+        </ul>
+        <div *ngIf="userLogged |async as user">
+          <a class="btn bi-pencil-square" id="btn-edit-exp"  routerLink="/editar-skill/{{Skill.id}}">
+              <i class="fa fa-pencil"></i>
+          </a>
+          
+          <button (click)="eliminar_skill(Skill.id)" class="btn btn-info">
+              X
+          </button>
+      </div>
+      </div>
+    <br>
+    </ng-container>
+  </div>
+</div>

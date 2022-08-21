@@ -1,0 +1,65 @@
+.row{
+    padding: 20px;
+    
+}
+div{
+    color: rgb(0, 0, 0);
+    background-color: rgb(174, 204, 250);
+    text-align: center;
+    }
+
+    @media (min-width:575px){
+#fotoperfil{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 6%;
+    top: 521px;
+}
+}
+
+@media (max-width:575px){
+    #fotoperfil{
+        position: absolute;
+        width: 25%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 37%;
+        top: 690px;
+    }
+}
+@media (max-width:575px){
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+}
+}
+@media (min-width:575px){
+    #nombre{
+        font-weight: bold;
+        margin-top: 10%;
+    }
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #8b0000;
+    border-color: #6c757d;
+}
+.bi-pencil-square {
+    color: #000000;
+    background-color: #45e081;
+    margin: 0.4em;
+}
+
+.button{
+    color: #fcfcfc;
+    background-color: #d60000;
+    margin: 0.2em;
+    width: 42px;
+}

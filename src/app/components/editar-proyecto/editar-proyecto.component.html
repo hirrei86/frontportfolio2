@@ -1,0 +1,39 @@
+<div class="stick-top">
+    <div class="panel-body">
+        <div class="col-md-6 offset-md-3">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <h1>Editar Proyecto</h1>
+                    <br>
+                    <br>
+                    <div>
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                            <div class="form-group">
+                                <label for="nombreproyecto">Proyecto</label>
+                                <input type="text" class="form-control" id="nombreproyecto" name="nombreproyecto"
+                                    [(ngModel)]="editPro.nombreproyecto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionproyecto">Descripcion</label>
+                                <input type="text" class="form-control" id="descripcionproyecto" name="descripcionproyecto"
+                                    [(ngModel)]="editPro.descripcionproyecto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="aniofinal">Portada del Proyecto (imagen en formato URL)</label>
+                                <input type="text" class="form-control" id="imgproyecto" name="imgproyecto"
+                                    [(ngModel)]="editPro.imgproyecto" required>
+                                    <br>
+                            </div>
+                            <button class="btn btn-primary">
+                                Guardar cambios
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

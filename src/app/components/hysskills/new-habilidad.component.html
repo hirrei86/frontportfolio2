@@ -1,0 +1,32 @@
+<div class="panel-body">
+    <div class="col-md-6 offset-md-3">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <h1>Agregue su Skill</h1>
+                <br>
+                <br>
+                <div>
+                    <form (ngSubmit)="onCreate()">
+                        <div class="form-group">
+                            <label>Habilidad</label>
+                            <input type="text" class="form-control" id="nombre" [(ngModel)]="skill.nombre"
+                                name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Porcentaje de conocimiento</label>
+                            <input type="text" class="form-control" id="porcentaje" [(ngModel)]="skill.porcentaje"
+                                name="porcentaje" required>
+                        </div>
+                        <br>
+                        <button class="btn btn-success">
+                            Guardar cambios
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

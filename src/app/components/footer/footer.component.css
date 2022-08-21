@@ -1,0 +1,14 @@
+.row{
+    background-color:rgb(163, 200, 255) ;
+    box-shadow: 10px 10px 25px black;
+    }
+
+    footer{
+color: rgb(51, 51, 51);
+font-size: 14px;
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: 2%;
+
+    }
