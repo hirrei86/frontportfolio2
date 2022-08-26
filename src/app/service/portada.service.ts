@@ -7,7 +7,7 @@ import { Portada } from '../model/portada.model';
   providedIn: 'root'
 })
 export class PortadaService {
-  URL = 'http://localhost:8080/portadas/'
+  URL = 'https://app-backhr.herokuapp.com/portadas/'
 
   constructor(private http: HttpClient) { }
 
