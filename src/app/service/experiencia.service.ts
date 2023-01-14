@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia.model';
 })
 
 export class ExperienciaService {
-  URL = 'https://app-backhr.herokuapp.com/experiencias/'
+  URL = 'https://backendporfolio2.onrender.com/experiencias/'
 
   constructor(private http: HttpClient) { }
   

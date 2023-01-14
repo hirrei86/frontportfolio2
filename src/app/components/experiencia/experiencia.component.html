@@ -10,7 +10,7 @@
                 <ng-container *ngFor="let Experiencia of experiencias">
                     <li>
                         <h2>{{Experiencia.empleo}}</h2>
-                        <h5>({{Experiencia.anioinicio}} - {{Experiencia.aniofinal}})</h5>
+                        <h4>({{Experiencia.anioinicio}} - {{Experiencia.aniofinal}})</h4>
                     </li>
                     <h4>{{Experiencia.cargo}}</h4>
                     <div *ngIf="userLogged |async as user">

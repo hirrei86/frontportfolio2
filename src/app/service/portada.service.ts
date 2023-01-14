@@ -7,7 +7,7 @@ import { Portada } from '../model/portada.model';
   providedIn: 'root'
 })
 export class PortadaService {
-  URL = 'https://app-backhr.herokuapp.com/portadas/'
+  URL = 'https://backendporfolio2.onrender.com/portadas/'
 
   constructor(private http: HttpClient) { }
 

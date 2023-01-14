@@ -10,7 +10,7 @@
                 <ng-container *ngFor="let Educacion of estudios">
                     <li>
                         <h2>{{Educacion.institucion}}</h2>
-                        <h5>({{Educacion.anioinicio}} - {{Educacion.aniofinal}})</h5>
+                        <h4>({{Educacion.anioinicio}} - {{Educacion.aniofinal}})</h4>
                     </li>
                     <h4>{{Educacion.tituloobtenido}}</h4>
                     <div *ngIf="userLogged |async as user">

@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyecto.model';
 })
 
 export class ProyectoService {
-  URL = 'https://app-backhr.herokuapp.com/proyectos/'
+  URL = 'https://backendporfolio2.onrender.com/proyectos/'
 
   constructor(private http: HttpClient) { }
 
